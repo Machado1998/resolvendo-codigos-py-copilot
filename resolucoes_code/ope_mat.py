@@ -2,8 +2,14 @@
 
 num1 = int(input("Insira o primeiro número: "))
 num2 = int(input("Insira o segundo número: "))
-soma = num1 + num2
+operacao = input("Insira a operação que deseja efetuar: (+, -, *, /): ") 
 
-resultado = f"A soma de {num1} e {num2} é: {soma}"
-
-print(resultado)
+if operacao == '+':
+        print(num1 + num2)
+elif operacao == '-':
+        print(abs(num1 - num2))
+elif operacao  == '*':
+        print(num1 * num2)
+elif operacao == '/':
+    print(num1 / num2)
+else: print("Operação inválida.")
